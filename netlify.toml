@@ -1,0 +1,11 @@
+# Netlify configuration for KLsubmit
+
+[build]
+  # Serve the frontend from the public folder (no build step required)
+  publish = "public"
+
+# SPA-style routing: send all requests to index.html so the app handles routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
